@@ -7,13 +7,12 @@ import { Component } from '@angular/core';
 })
 export class ListComponent {
 
-  public heroNames:string[] = ['spiderman', 'ironman', 'hulk', 'she hulk', 'thor'];
+  public heroNames:string[] = ['spiderman', 'ironman', 'hulk', 'she hulk', 'thor' ,'hola'];
 
 
   removeLastHero():void{
     this.heroNames.pop();
   }
-
-
 }
+
 
