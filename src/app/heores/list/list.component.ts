@@ -20,3 +20,4 @@ export class ListComponent {
    this.delatedHero =  this.heroNames.pop();
   }
 }
+
