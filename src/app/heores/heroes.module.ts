@@ -15,6 +15,7 @@ import { ListComponent } from "./Components/list.component";
     exports:[
         HeroComponent,
         ListComponent,
+        
 
     ],
 
