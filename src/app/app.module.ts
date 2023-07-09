@@ -23,7 +23,7 @@ import { MainPageComponent } from './dbz/pages/main-page.component';
   imports: [
     BrowserModule,
     // CounterModule,
-    HeroesModule,
+   // HeroesModule,
     DbzModule,
 
     

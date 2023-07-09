@@ -16,11 +16,9 @@ export class ListComponent {
     'Batman',
   ];
 
-  public delatedHero?:string;
+  public delatedHero?: string;
 
   removeLastHero(): void {
-   this.delatedHero =  this.heroNames.pop();
+    this.delatedHero = this.heroNames.pop();
   }
 }
-
-
