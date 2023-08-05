@@ -16,18 +16,12 @@ import { MainPageComponent } from './dbz/pages/main-page.component';
     AppComponent,
     // HeroComponent,  // si no me funciona, eliminio y pongo componente
     // ListComponent,  // 
-    MainPageComponent
-   
-   
   ],
   imports: [
     BrowserModule,
     // CounterModule,
    // HeroesModule,
     DbzModule,
-
-    
-    
   ],
   providers: [],
   bootstrap: [AppComponent]
