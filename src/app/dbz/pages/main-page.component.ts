@@ -20,10 +20,10 @@ export class MainPageComponent  {
         name:'Goku',
         power:9500
     },{
-        name:'vegeta',
+        name:'gohan',
         power:9000,
     }];
-    
+
 
 
     onNewCharacter(character:Character):void {
