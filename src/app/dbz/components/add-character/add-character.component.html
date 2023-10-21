@@ -4,23 +4,22 @@
     <input type="text"  
         class="form-control mb-2"
         placeholder="Nombre"
-        [(ngModel)] ="character.name"
-        name="name"      
+        [(ngModel)]="character.name"
+        name="name">
         
         
-        >
         
         <input type="number"
         class="form-control mb-2"
         placeholder="Poder"
         [(ngModel)]="character.power"
-        name="power"
-        >
+        name="power" >
 
 
-      <button class="btn btn-primary" >Agregar</button>
+        <pre>{{character | json}} </pre>
+      <button type="submit" class="btn btn-primary"  >Agregar</button>
 
-      <pre> {{character | json}} </pre>
+      <!-- <pre> {{character | json}} </pre> -->
     
 </form>
 

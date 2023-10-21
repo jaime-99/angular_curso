@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Character } from '../../interfaces/character.interface';
+import {  EventEmitter, Output } from '@angular/core';
+
 
 
 @Component({
@@ -9,12 +11,30 @@ import { Character } from '../../interfaces/character.interface';
 })
 export class ListComponent {
 
+  indice: number = 0;
+
+
   @Input()
   public characterList:Character[]= [{
     name: 'trunks',
     power:10,
     
   }]
+
+  // public index:number = this.indice;
+  @Output()
+ public onDelete = new EventEmitter<number>()
+
+  onDelateCharacter(index:number):void{
+
+    //todo emitir el id del personaje 
+    //tarea recibiir el index e imprimir en consola
+        
+    console.log(index)
+    this.onDelete.emit(index)
+
+
+  }
 
 }
 
