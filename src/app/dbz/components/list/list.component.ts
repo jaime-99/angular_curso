@@ -20,15 +20,16 @@ export class ListComponent {
 
   //emitir este evento onDelete ,
   @Output()
-  public onDelete: EventEmitter<number> = new EventEmitter();
+  public onDelete: EventEmitter<string> = new EventEmitter();
 
 
-  onDelateCharacter(index:number):void{
+  onDelateCharacter(id?:string):void{
 
-    //todo emitir el id del personaje 
+    //todo emitir el id del personaje
     //tarea recibiir el index e imprimir en consola
-        
-    this.onDelete.emit(index)
+    if(!id) return;
+
+    this.onDelete.emit(id)
 
 
   }

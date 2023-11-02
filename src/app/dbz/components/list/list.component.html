@@ -17,17 +17,17 @@
 
   <div>
   <span class="text-primary"> {{i + 1}} </span>
-  
+
   <span>{{character.name}} </span>
-  
+
   <strong>Power</strong>
-  
+
   <span> {{character.power}}</span>
 </div>
 
 
 
-  <button (click)="onDelateCharacter(i)" class="btn btn-danger">X</button>
+  <button (click)="onDelateCharacter(character.id)" class="btn btn-danger">X</button>
 
   </li>
 </ul>

@@ -7,31 +7,41 @@ import {v4 as uuid} from 'uuid'
 export class DbzService {
 
     public characters:Character[]=[{
-
+        id:uuid(),
         name:'Krillin',
         power:1000
     },{
+        id:uuid(),
         name:'Goku',
         power:9500
     },{
+        id:uuid(),
         name:'vegeta',
         power:9000,
     }];
 
 
 
-    onNewCharacter(character:Character):void {
-        console.log(character);
-        this.characters.push(character);
+    onNewCharacter ({name,power}: Character):void {
+
+      const newCharacter:Character = {
+        id:uuid(),
+        name,
+        power
+      }
+
+
+        this.characters.push(newCharacter);
 
     }
 
 
-    onDelete(index:number){
-        console.log(index);
-        this.characters.splice(index,1);
+    // onDelete(index:number){
+    //     this.characters.splice(index,1);
+    // }
 
-
+    deleteCharacterById(id:string){
+      this.characters = this.characters.filter(character => character.id !==id)
     }
 
 
